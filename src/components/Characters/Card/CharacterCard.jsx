@@ -7,7 +7,7 @@ const CharacterCard = ({character}) => {
 
     const [modal, setModal] = useState(false)
 
-    // prevent scrolling
+    // prevent scrolling 
     useEffect(() => {
         modal ? document.body.style.overflow = "hidden" : document.body.style.overflow = ""
     }, [modal])
