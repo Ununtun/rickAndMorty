@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.showDetails {
+    display: none;
+}
+.characterCard:hover .showDetails {
+    display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* modal */
+.modalHeader {
+    border-bottom: 1px solid hsl(0, 0%, 91%);
+}
+.bg-modal {
+    background: hsl(0, 0%, 0%, .75);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* modal animation */
+.modalWindow-enter {
+    opacity: 0;
+}
+.modalWindow-enter-active {
+    opacity: 1;
+    transition: opacity 500ms;
+}
+.modalWindow-exit {
+    opacity: 1;
+}
+.modalWindow-exit-active {
+    opacity: 0;
+    transition: opacity 500ms;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modalWindow-enter .modalBody {
+    opacity: 0;
+    transform: scale(.8, .8);
 }
-
-.App-link {
-  color: #61dafb;
+.modalWindow-enter-active .modalBody {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 500ms cubic-bezier(.165, .840, .440, 1.000);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modalWindow-exit .modalBody {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.modalWindow-exit-active .modalBody {
+    opacity: 0;
+    transform: scale(.8, .8);
+    transition: all 500ms cubic-bezier(.165, .840, .440, 1.000);
 }
