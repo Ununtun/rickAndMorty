@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CharacterModal from '../CharacterModal';
 import { Button } from "@material-tailwind/react";
 
@@ -51,4 +50,4 @@ const CharacterCard = ({character}) => {
     );
 };
 
-export default React.memo(CharacterCard);
+export default CharacterCard;

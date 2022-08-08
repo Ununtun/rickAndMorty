@@ -63,4 +63,4 @@ const FilterPanel = ({
     );
 };
 
-export default React.memo(FilterPanel);
+export default FilterPanel;

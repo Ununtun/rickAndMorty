@@ -12,7 +12,7 @@ const statusFilter = (status, updatedList) => {
     );
 }
 
-// Status Filter
+// Species Filter
 const speciesFilter = (species, updatedList) => {
     return updatedList.filter(
         (item) => item.species === species

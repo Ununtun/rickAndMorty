@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Rick and Morty App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[App Demo](https://rick-and-morty-10822.herokuapp.com/).
+
+## Stack
+
+- axios
+- material-Tailwind / TailwindCSS
+- react-fontawesome
+- react-transition-group
+- react-intersection-observer
 
 ## Available Scripts
 
