@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import CharacterModal from '../Characters/CharacterModal';
+import CharacterModal from '../CharacterModal';
 import { Button } from "@material-tailwind/react";
 
 const CharacterCard = ({character}) => {
 
     const [modal, setModal] = useState(false)
 
-    // prevent scrolling 
+    // prevent scrolling
     useEffect(() => {
         modal ? document.body.style.overflow = "hidden" : document.body.style.overflow = ""
     }, [modal])

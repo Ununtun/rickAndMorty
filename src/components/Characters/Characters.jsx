@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import Loader from '../UI/Loader';
-import CharacterCard from '../Card/CharacterCard';
-import { CARD_LIMIT } from '../../constants/appConst'
+import CharacterCard from './Card/CharacterCard';
+import { CARD_LIMIT } from '../../constants/appConst';
 
 const Characters = ({
         characterList,
